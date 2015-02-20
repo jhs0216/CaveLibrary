@@ -11,13 +11,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
+// TYPE:LENGTH:VALUE...
 class FileHandler {
 	std::ofstream fOut;
 public:
 	FileHandler();
 	virtual ~FileHandler();
-	void write(const std::string & s);
+	void FormatWrite(const std::string & s);
 };
 
 #endif /* FILEHANDLER_FILEHANDLER_H_ */
